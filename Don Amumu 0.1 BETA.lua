@@ -12,7 +12,6 @@ function DonAmumu:__init()
 	self:LoadSpells()
 	self:LoadMenu()
 	Callback.Add("Tick", function() self:Tick() end)
-	Callback.Add("Draw", function() self:Draw() end)
 end
 
 function DonAmumu.LoadSpells()
@@ -28,7 +27,6 @@ function DonAmumu:LoadMenu()
 	DonAmumu.Menu:MenuElement({id = "Harass", name = "Harass", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "LastHit", name = "LastHit", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "Killsteal", name = "Killsteal", type = MENU})
-	DonAmumu.Menu:MenuElement({id = "Draw", name = "Draw", type = MENU})
 -- Combo Sub-Menu
 	DonAmumu.Menu.Combo:MenuElement({id = "UseQ", name = "Usar Q [Bandagem]", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Bandage_Toss.png/revision/latest?cb=20171130205725"})
 	DonAmumu.Menu.Combo:MenuElement({id = "UseE", name = "Usar E", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
@@ -40,11 +38,6 @@ function DonAmumu:LoadMenu()
 	DonAmumu.Menu.Harass:MenuElement({id = "UseE", name = "Usar E", value = falsee, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
 -- LastHit Sub-Menu
 	DonAmumu.Menu.LastHit:MenuElement({id = "UseE", name = "Usar E", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
--- Draw Sub-Menu
-	DonAmumu.Menu.Draw:MenuElement({id = "DrawReady", name = "Desenhar apenas habilidades [?]", value = false})
-	DonAmumu.Menu.Draw:MenuElement({id = "DrawQ", name = "Desenhar Alcance Q", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Bandage_Toss.png/revision/latest?cb=20171130205725"})
-	DonAmumu.Menu.Draw:MenuElement({id = "DrawE", name = "Desenhar Alcance E", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
-	DonAmumu.Menu.Draw:MenuElement({id = "DrawR", name = "Desenhar Alcance R", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/7/72/Curse_of_the_Sad_Mummy.png/revision/latest?cb=20171130205438"})
 -- Killsteal Sub-Menu
 	DonAmumu.Menu.Killsteal:MenuElement({id = "StealQ", name = "KS com o Q", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Bandage_Toss.png/revision/latest?cb=20171130205725"})
 	DonAmumu.Menu.Killsteal:MenuElement({id = "StealE", name = "KS com o E", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
