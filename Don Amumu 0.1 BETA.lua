@@ -21,27 +21,27 @@ function DonAmumu.LoadSpells()
 end
 
 function DonAmumu:LoadMenu()
-	DonAmumu.Menu = MenuElement({id = "DonAmumu", name = "Amumu", type = MENU, leftIcon ="https://www.mobafire.com/images/champion/icon/amumu.png"})
+	DonAmumu.Menu = MenuElement({id = "DonAmumu", name = "DonAmumu", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "Combo", name = "Combo", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "LaneClear", name = "Laneclear", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "Harass", name = "Harass", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "LastHit", name = "LastHit", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "Killsteal", name = "Killsteal", type = MENU})
 -- Combo Sub-Menu
-	DonAmumu.Menu.Combo:MenuElement({id = "UseQ", name = "Usar Q [Bandagem]", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Bandage_Toss.png/revision/latest?cb=20171130205725"})
-	DonAmumu.Menu.Combo:MenuElement({id = "UseE", name = "Usar E", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
-	DonAmumu.Menu.Combo:MenuElement({id = "UseR", name = "Usar R", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/7/72/Curse_of_the_Sad_Mummy.png/revision/latest?cb=20171130205438"})
-	DonAmumu.Menu.Combo:MenuElement({id = "UseRTarget", name = "Alvos minimos para R", value = 2, min = 1, max = 5, step = 1, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/7/72/Curse_of_the_Sad_Mummy.png/revision/latest?cb=20171130205438"})
+	DonAmumu.Menu.Combo:MenuElement({id = "UseQ", name = "Usar Q [Bandagem]", value = true})
+	DonAmumu.Menu.Combo:MenuElement({id = "UseE", name = "Usar E", value = true})
+	DonAmumu.Menu.Combo:MenuElement({id = "UseR", name = "Usar R", value = true})
+	DonAmumu.Menu.Combo:MenuElement({id = "UseRTarget", name = "Alvos minimos para R", value = 2, min = 1, max = 5, step = 1})
 -- LaneClear Sub-Menu
-	DonAmumu.Menu.LaneClear:MenuElement({id = "UseE", name = "Usar E", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
+	DonAmumu.Menu.LaneClear:MenuElement({id = "UseE", name = "Usar E", value = true})
 -- Harass Sub-Menu
-	DonAmumu.Menu.Harass:MenuElement({id = "UseE", name = "Usar E", value = falsee, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
+	DonAmumu.Menu.Harass:MenuElement({id = "UseE", name = "Usar E", value = false})
 -- LastHit Sub-Menu
-	DonAmumu.Menu.LastHit:MenuElement({id = "UseE", name = "Usar E", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
+	DonAmumu.Menu.LastHit:MenuElement({id = "UseE", name = "Usar E", value = false})
 -- Killsteal Sub-Menu
-	DonAmumu.Menu.Killsteal:MenuElement({id = "StealQ", name = "KS com o Q", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Bandage_Toss.png/revision/latest?cb=20171130205725"})
-	DonAmumu.Menu.Killsteal:MenuElement({id = "StealE", name = "KS com o E", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
-	DonAmumu.Menu.Killsteal:MenuElement({id = "StealR", name = "KS com o R", value = false, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/7/72/Curse_of_the_Sad_Mummy.png/revision/latest?cb=20171130205438"})
+	DonAmumu.Menu.Killsteal:MenuElement({id = "StealQ", name = "KS com o Q", value = true})
+	DonAmumu.Menu.Killsteal:MenuElement({id = "StealE", name = "KS com o E", value = false})
+	DonAmumu.Menu.Killsteal:MenuElement({id = "StealR", name = "KS com o R", value = false})
 -- Infos
 	DonAmumu.Menu:MenuElement({name = "Versao: 0.1", type = SPACE})
 	DonAmumu.Menu:MenuElement({name = "Patch   : 8.3", type = SPACE})
