@@ -24,11 +24,11 @@ end
 function DonAmumu:LoadMenu()
 	DonAmumu.Menu = MenuElement({id = "DonAmumu", name = "Amumu", type = MENU, leftIcon ="https://www.mobafire.com/images/champion/icon/amumu.png"})
 	DonAmumu.Menu:MenuElement({id = "Combo", name = "Combo", type = MENU})
-	DonAmumu.Menu:MenuElement({id = "LaneClear", name = "LimparWaves", type = MENU})
+	DonAmumu.Menu:MenuElement({id = "LaneClear", name = "Laneclear", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "Harass", name = "Harass", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "LastHit", name = "LastHit", type = MENU})
 	DonAmumu.Menu:MenuElement({id = "Killsteal", name = "Killsteal", type = MENU})
-	DonAmumu.Menu:MenuElement({id = "Draw", name = "Desenhos", type = MENU})
+	DonAmumu.Menu:MenuElement({id = "Draw", name = "Draw", type = MENU})
 -- Combo Sub-Menu
 	DonAmumu.Menu.Combo:MenuElement({id = "UseQ", name = "Usar Q [Bandagem]", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b5/Bandage_Toss.png/revision/latest?cb=20171130205725"})
 	DonAmumu.Menu.Combo:MenuElement({id = "UseE", name = "Usar E", value = true, leftIcon = "https://vignette.wikia.nocookie.net/leagueoflegends/images/b/b3/Tantrum.png/revision/latest?cb=20171129224902"})
