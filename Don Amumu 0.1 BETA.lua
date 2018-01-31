@@ -124,30 +124,7 @@ function DonAmumu:GetMode()
 	end
 end
 
-function DonAmumu:Draw()
-	if not myHero.alive then return end
 
-	if DonAmumu.Menu.Draw.DrawReady:Value() then
-		if DonAmumu:IsReady(_Q) and DonAmumu.Menu.Draw.DrawQ:Value() then
-			Draw.Circle(myHero.pos, 1100, 3, Draw.Color(255, 255, 255, 100))
-		end
-		if DonAmumu:IsReady(_E) and DonAmumu.Menu.Draw.DrawQ:Value() then
-			Draw.Circle(myHero.pos, 350, 3, Draw.Color(255, 255, 255, 100))
-		end
-		if DonAmumu:IsReady(_R) and DonAmumu.Menu.Draw.DrawQ:Value() then
-			Draw.Circle(myHero.pos, 550, 3, Draw.Color(255, 255, 255, 100))
-		end
-	else
-		if DonAmumu.Menu.Draw.DrawQ:Value() then
-			Draw.Circle(myHero.pos, 1100, 3, Draw.Color(255, 255, 255, 100))
-		end
-		if DonAmumu.Menu.Draw.DrawE:Value() then
-			Draw.Circle(myHero.pos, 350, 3, Draw.Color(255, 255, 255, 100))
-		end
-		if DonAmumu.Menu.Draw.DrawQ:Value() then
-			Draw.Circle(myHero.pos, 550, 3, Draw.Color(255, 255, 255, 100))
-	end
-end
 
 -- Début Vrai Script
 
