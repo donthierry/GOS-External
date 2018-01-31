@@ -1,5 +1,7 @@
 if myHero.charName ~= "Amumu" then return end
 
+local HeroIcon = "https://www.mobafire.com/images/champion/icon/amumu.png"
+
 require 'DamageLib'
 require 'Eternal Prediction'
 
